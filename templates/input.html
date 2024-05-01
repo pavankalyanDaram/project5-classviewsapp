@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#8fbc8f">
+<center>
+    <h1>
+        <h2> get form</h2>
+        <form action="./add" method="get">
+            Enter FirstNumber:<input type="text" name="t1"> <br>
+            Enter FirstNumber:<input type="text" name="t2"> <br>
+            <input type="submit" value="add">
+        </form>
+    </h1>
+    <h1>
+        <h2> post from</h2>
+        <form action="./add" method="post">
+            {% csrf_token %}
+            Enter FirstNumber:<input type="text" name="t1"> <br>
+            Enter FirstNumber:<input type="text" name="t2"> <br>
+            <input type="submit" value="add">
+        </form>
+    </h1>
+</center>
+</body>
+</html>
